@@ -1,0 +1,44 @@
+{
+  "name": "video-proctoring-system-backend",
+  "version": "1.0.0",
+  "description": "Video Proctoring System for Online Interviews – A secure web-based platform that ensures fair remote interviews through live video monitoring, candidate authentication, and suspicious activity detection. Supports recording, review, and scalable integration with existing interview workflows.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --loader ts-node/esm --watch src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nickgautam/video-proctoring-system-backend.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nickgautam/video-proctoring-system-backend/issues"
+  },
+  "homepage": "https://github.com/nickgautam/video-proctoring-system-backend#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "date-fns": "^4.1.0",
+    "dotenv": "^17.2.2",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.18.1",
+    "zod": "^4.1.9"
+  },
+  "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.9",
+    "@types/cors": "^2.8.19",
+    "@types/express": "^5.0.3",
+    "@types/jsonwebtoken": "^9.0.10",
+    "@types/node": "^24.5.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
+  }
+}

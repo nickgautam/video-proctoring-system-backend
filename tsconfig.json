@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    /* Language and Environment */
+    "target": "ES2022",                          /* Modern JS (Node 22 supports this natively) */
+    "lib": ["ES2022"],                           /* Modern language features */
+    "module": "NodeNext",                        /* ESM for Node.js */
+    "moduleResolution": "nodenext",              /* Node ESM resolution */
+    "types": ["node"],                           /* Node type definitions */
+    "esModuleInterop": true,                     /* Allow default imports */
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": "./",
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+
+    /* Strictness */
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictBindCallApply": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
